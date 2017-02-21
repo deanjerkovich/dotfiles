@@ -20,3 +20,5 @@ nnoremap <esc> :noh<return><esc>
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+execute pathogen#infect()
+
