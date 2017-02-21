@@ -17,3 +17,6 @@ set runtimepath^=~/.vim/bundle/nerdtree
 
 nmap <F8> :TagbarToggle<CR>
 nnoremap <esc> :noh<return><esc>
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
