@@ -111,7 +111,6 @@ fi
 
 alias grepi='grep -i'
 alias fuck='sudo $(history -p \!\!)'
-alias joern='java -jar ~/joern/joern-0.3.1/bin/joern.jar'
-alias jlg='joern-lookup -g'
 alias ll='ls -l'
 
+[ `uname -s` != Linux ] && exec tmux
