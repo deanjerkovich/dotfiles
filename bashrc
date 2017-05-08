@@ -3,5 +3,8 @@ alias fuck='sudo $(history -p \!\!)'
 alias ll='ls -l'
 alias vf='vim `fzf`'
 alias agb='ag -i --search-binary'
-
+alias ..='cd ..'
+alias c='clear'
+alias apt-get='sudo apt-get'
+alias gs='git status'
 
