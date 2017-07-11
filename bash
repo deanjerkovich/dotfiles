@@ -1,6 +1,7 @@
 alias grepi='grep -i'
 alias fuck='sudo $(history -p \!\!)'
 alias ll='ls -l'
+alias ls='ls -aGF'
 alias vf='vim `fzf`'
 alias agi='ag -i'
 alias agb='ag -i --search-binary'

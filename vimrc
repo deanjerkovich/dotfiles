@@ -10,6 +10,10 @@ set hlsearch
 set incsearch
 set showcmd
 set scrolloff=5
+set cursorline
+set nobackup
+set nowritebackup
+set noswapfile
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/tagbar
