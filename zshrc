@@ -74,3 +74,7 @@ alias gs='git status'
 # golang stuff
 export GOPATH=~/code/go 
 alias gf='gofmt -s -w .'
+
+# stop zsh from changing tmux titles
+DISABLE_AUTO_TITLE=true
+
