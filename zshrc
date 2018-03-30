@@ -71,6 +71,7 @@ alias c='clear'
 alias apt-get='sudo apt-get'
 alias gs='git status'
 alias lr='ll -ltr'
+alias wl='wc -l'
 
 # golang stuff
 export GOPATH=~/code/go 
