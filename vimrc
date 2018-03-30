@@ -1,7 +1,7 @@
 syntax on
 set number
 set expandtab
-set tabstop=2
+set tabstop=4
 set tags=tags;/
 set smartcase
 set ignorecase
@@ -11,18 +11,23 @@ set incsearch
 set showcmd
 set scrolloff=5
 set cursorline
-set nobackup
-set nowritebackup
-set noswapfile
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/tagbar
 set runtimepath^=~/.vim/bundle/nerdtree
 
 nmap <F8> :TagbarToggle<CR>
-nnoremap <esc> :noh<return><esc>
-
-let g:ackprg = 'ag --nogroup --nocolor --column'
+nnoremap <silent> <esc> :noh<CR>
 
 execute pathogen#infect()
+syntax on
 
+if executable('ag')
+          let g:ackprg = 'ag --vimgrep'
+  endif
+
+au BufRead,BufNewFile *.go set filetype=go
+
+set nobackup
+set nowritebackup
+set noswapfile
