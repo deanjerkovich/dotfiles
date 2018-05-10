@@ -73,6 +73,7 @@ alias apt-get='sudo apt-get'
 alias gs='git status'
 alias lr='ll -ltr'
 alias wl='wc -l'
+alias dw='git add *; git commit -m "dw++"; git push'
 
 # golang stuff
 export GOPATH=~/code/go 
