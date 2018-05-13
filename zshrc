@@ -82,3 +82,5 @@ alias gf='gofmt -s -w .'
 # stop zsh from changing tmux titles
 DISABLE_AUTO_TITLE=true
 
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/dean/miniconda3/bin:$PATH"
