@@ -11,3 +11,4 @@ alias apt-get='sudo apt-get'
 alias gs='git status'
 alias gf='gofmt -s -w .'
 export GOPATH=~/code/go
+export EDITOR='vim'
