@@ -19,7 +19,6 @@ set runtimepath^=~/.vim/bundle/nerdtree
 nmap <F8> :TagbarToggle<CR>
 nnoremap <silent> <esc> :noh<CR>
 
-execute pathogen#infect()
 syntax on
 
 if executable('ag')
