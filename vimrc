@@ -19,7 +19,6 @@ set runtimepath^=~/.vim/bundle/nerdtree
 nmap <F8> :TagbarToggle<CR>
 nnoremap <silent> <esc> :noh<CR>
 
-execute pathogen#infect()
 syntax on
 
 if executable('ag')
@@ -31,3 +30,9 @@ au BufRead,BufNewFile *.go set filetype=go
 set nobackup
 set nowritebackup
 set noswapfile
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
