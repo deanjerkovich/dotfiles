@@ -84,3 +84,14 @@ DISABLE_AUTO_TITLE=true
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/dean/miniconda3/bin:$PATH"
+
+ctdn() {
+    sleep $i
+    for i in {1..444}
+    do
+        echo -n "oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+        sleep 0.3
+        echo -n "------------------------------------------------------------------------------------------------------------------------------------"
+        sleep 0.3 
+    done
+}
