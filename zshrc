@@ -86,6 +86,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/dean/miniconda3/bin:$PATH"
 
 ctdn() {
+    date
     sleep $i
     for i in {1..444}
     do
