@@ -77,6 +77,7 @@ alias dw='git add *; git commit -m "dw++"; git push'
 
 # golang stuff
 export GOPATH=~/code/go 
+export GOBIN=$GOPATH/bin
 alias gf='gofmt -s -w .'
 
 # stop zsh from changing tmux titles
@@ -84,4 +85,5 @@ DISABLE_AUTO_TITLE=true
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH=~/code/go/bin:$PATH
+
 
