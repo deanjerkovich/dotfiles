@@ -37,3 +37,5 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
+
+let @p = 'i/*NAME            aDESCRIPTION     aRETURN TYPE     aRETURN MEANING  aERRROR CONDS    aARG-1 PROTO     a      MEANING   aARG-N PROTO     a      MEANING   a*/'
