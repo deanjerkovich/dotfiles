@@ -12,6 +12,7 @@ set showcmd
 set scrolloff=5
 set cursorline
 set foldmethod=syntax
+set foldlevel=99
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/tagbar
