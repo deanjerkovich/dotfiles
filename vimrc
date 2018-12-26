@@ -18,6 +18,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/tagbar
 set runtimepath^=~/.vim/bundle/nerdtree
 
+highlight Folded ctermbg=Black
+highlight Folded ctermfg=DarkGray
+
 nmap <F8> :TagbarToggle<CR>
 nnoremap <silent> <esc> :noh<CR>
 
