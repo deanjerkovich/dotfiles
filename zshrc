@@ -74,6 +74,7 @@ alias gs='git status'
 alias lr='ll -ltr'
 alias wl='wc -l'
 alias dw='git add * && git commit -m "dw++" && git push && dwlog'
+alias cindex='ctags -R . && cscope -Rb'
 
 # golang stuff
 export GOPATH=~/code/go 
