@@ -13,6 +13,7 @@ set scrolloff=5
 set cursorline
 set foldmethod=syntax
 set foldlevel=99
+let mapleader = ','
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/tagbar
@@ -43,3 +44,6 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 let @p = '0i/*NAME            -DESCRIPTION     -RETURN TYPE     -RETURN MEANING  -ERRROR CONDS    -ARG-1 PROTO     -      MEANING   -ARG-N PROTO     -      MEANING   -IMPLICATIONS    -*/'
+
+" visually select last change
+nnoremap <leader>p `[v`]
