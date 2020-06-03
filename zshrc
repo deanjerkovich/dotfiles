@@ -63,7 +63,7 @@ alias grepi='grep -i'
 alias fuck='sudo $(history -p \!\!)'
 alias ll='ls -l' 
 alias ls='ls -aGF'
-alias vf='vim `fzf`'
+alias vf='vim "`fzf`"'
 alias of='open `fzf`'
 alias agi='ag -i -U' 
 alias agb='ag -i -U --search-binary'
@@ -75,6 +75,7 @@ alias lr='ll -ltr'
 alias wl='wc -l'
 alias dw='git add * && git commit -m "dw++" && git push && dwlog'
 alias cindex='ctags -R . && cscope -Rb'
+alias curla='curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" '
 
 coderev() {
     docker run -it -v ~/code/$1:/root/code_review codereview
