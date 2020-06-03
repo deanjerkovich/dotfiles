@@ -76,6 +76,10 @@ alias wl='wc -l'
 alias dw='git add * && git commit -m "dw++" && git push && dwlog'
 alias cindex='ctags -R . && cscope -Rb'
 
+coderev() {
+    docker run -it -v ~/code/$1:/root/code_review codereview
+}
+
 # golang stuff
 export GOPATH=~/code/go 
 export GOBIN=$GOPATH/bin
