@@ -77,6 +77,7 @@ alias dw='git add * && git commit -m "dw++" && git push && dwlog'
 alias cindex='ctags -R . && cscope -Rb'
 alias curla='curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" '
 alias python=python3
+alias k=kubectl
 
 coderev() {
     docker run -it -v ~/code/$1:/root/code_review codereview
