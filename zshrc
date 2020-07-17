@@ -73,10 +73,16 @@ alias apt-get='sudo apt-get'
 alias gs='git status'
 alias lr='ll -ltr'
 alias wl='wc -l'
-alias dw='git add * && git commit -m "dw++" && git push && dwlog'
+alias dw='git add ~/code/knowledge/productivity/deep-work-log.txt && git commit -m "dw++" && git push && dwlog'
 alias cindex='ctags -R . && cscope -Rb'
 alias curla='curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" '
 alias psgr='ps -ef | grepi '
+alias python=python3
+alias k=kubectl
+
+coderev() {
+    docker run -it -v ~/code/$1:/root/code_review codereview
+}
 
 # golang stuff
 export GOPATH=~/code/go 
@@ -90,3 +96,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH=~/code/go/bin:$PATH
 
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dean/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dean/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dean/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dean/google-cloud-sdk/completion.zsh.inc'; fi
