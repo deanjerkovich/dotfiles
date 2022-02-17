@@ -95,6 +95,7 @@ DISABLE_AUTO_TITLE=true
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH=~/code/go/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 
 # The next line updates PATH for the Google Cloud SDK.
