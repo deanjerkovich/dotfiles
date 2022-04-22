@@ -67,6 +67,7 @@ alias vf='vim "`fzf`"'
 alias of='open `fzf`'
 alias agi='ag -i -U' 
 alias agb='ag -i -U --search-binary'
+alias agc='ag -i -U --ignore="*.js" --ignore="*.css"'
 alias ..='cd ..' 
 alias c='clear'
 alias apt-get='sudo apt-get'
@@ -76,6 +77,7 @@ alias wl='wc -l'
 alias dw='git add ~/code/knowledge/productivity/deep-work-log.txt && git commit -m "dw++" && git push && dwlog'
 alias cindex='ctags -R . && cscope -Rb'
 alias curla='curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" '
+alias psgr='ps -ef | grepi '
 alias python=python3
 alias k=kubectl
 alias pre-check=$GOPATH/src/pre-commit-checking/pre-commit.sh
@@ -94,6 +96,7 @@ DISABLE_AUTO_TITLE=true
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH=~/code/go/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
 
 
 # The next line updates PATH for the Google Cloud SDK.
