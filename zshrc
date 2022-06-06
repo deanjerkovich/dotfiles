@@ -86,6 +86,11 @@ coderev() {
     docker run -it -v ~/code/$1:/root/code_review codereview
 }
 
+gocov() {
+    t="/tmp/go-cover.$$.tmp"
+    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
+}
+
 # golang stuff
 export GOPATH=~/code/go 
 export GOBIN=$GOPATH/bin
