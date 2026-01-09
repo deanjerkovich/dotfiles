@@ -81,6 +81,7 @@ alias psgr='ps -ef | grepi '
 alias python=python3
 alias k=kubectl
 alias pre-check=$GOPATH/src/pre-commit-checking/pre-commit.sh
+alias ltr='ls -ltr'
 
 coderev() {
     docker run -it -v ~/code/$1:/root/code_review codereview
