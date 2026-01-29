@@ -110,3 +110,37 @@ if [ -f '/Users/dean/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dean/googl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/dean/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dean/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Professional Maintenance Alias
+update-system() {
+    echo "🚀 Starting System Maintenance..."
+
+    # Function to run a command and block if it fails
+    run_and_check() {
+        local label=$1
+        shift
+        echo -e "\n--- $label ---"
+        
+        # Execute the actual command
+        if ! "$@"; then
+            echo -e "\n❌ \033[0;31m$label FAILED\033[0m"
+            echo "Press ENTER to ignore and move to next task, or Ctrl+C to abort..."
+            read -r
+        else
+            echo -e "✅ $label completed successfully."
+        fi
+    }
+
+    # Execute tasks
+    run_and_check "Homebrew" brew update
+    run_and_check "Homebrew Upgrade" brew upgrade
+    run_and_check "Homebrew Cleanup" brew cleanup
+    
+    run_and_check "NPM Global" sudo npm update -g
+    
+    run_and_check "Pip" python3 -m pip install --upgrade pip
+    
+    run_and_check "Brew Doctor" brew doctor
+
+    echo -e "\n🏁 Maintenance Process Finished."
+}
