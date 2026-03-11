@@ -145,3 +145,4 @@ update-system() {
     echo -e "\n🏁 Maintenance Process Finished."
 }
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
